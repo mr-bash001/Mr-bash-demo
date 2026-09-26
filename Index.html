@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mr_Bash Demo</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #08090d;
+    color: white;
+}
+
+nav {
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0d0f16;
+    border-bottom: 1px solid #242735;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #8b5cf6;
+}
+
+nav a {
+    color: #bbb;
+    text-decoration: none;
+    margin-left: 18px;
+}
+
+.hero {
+    min-height: 80vh;
+    padding: 80px 7%;
+    display: flex;
+    align-items: center;
+    background:
+        radial-gradient(circle at 80% 20%, #39206b, transparent 35%),
+        radial-gradient(circle at 20% 80%, #12314a, transparent 35%);
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.tag {
+    color: #a78bfa;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: clamp(50px, 10vw, 90px);
+    line-height: .95;
+    margin: 20px 0;
+}
+
+h1 span {
+    color: #8b5cf6;
+}
+
+.hero p {
+    color: #aeb5c4;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 22px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.primary {
+    background: #8b5cf6;
+    color: white;
+}
+
+.secondary {
+    border: 1px solid #363b4b;
+    color: white;
+}
+
+section {
+    padding: 70px 7%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.title h2 {
+    font-size: 35px;
+}
+
+.title p {
+    color: #8e96a8;
+    margin-top: 8px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 18px;
+}
+
+.card {
+    background: #11141d;
+    border: 1px solid #242a38;
+    border-radius: 16px;
+    padding: 25px;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #929aaa;
+}
+
+.server {
+    background: #11141d;
+    border: 1px solid #292f3d;
+    border-radius: 18px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.online {
+    color: #4ade80;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #687083;
+    border-top: 1px solid #242735;
+}
+
+@media(max-width: 650px) {
+    nav .links {
+        display: none;
+    }
+
+    .hero {
+        min-height: 75vh;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">
+        Mr_Bash <span>Demo</span>
+    </div>
+
+    <div class="links">
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#rules">Rules</a>
+        <a href="#join">Join</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="hero-content">
+
+        <div class="tag">
+            NEXT-GEN ROLEPLAY COMMUNITY
+        </div>
+
+        <h1>
+            Welcome to <span>Mr_Bash</span>
+        </h1>
+
+        <p>
+            A modern roleplay gaming community built for players
+            who want an immersive multiplayer experience.
+        </p>
+
+        <div class="buttons">
+            <a href="#join" class="btn primary">
+                Join Server
+            </a>
+
+            <a href="#features" class="btn secondary">
+                Explore
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<section id="about">
+
+    <div class="title">
+        <h2>Our Community</h2>
+        <p>Everything your players need in one place.</p>
+    </div>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>🎮 Roleplay</h3>
+            <p>
+                Build your character, choose your path and create
+                your own story.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>👥 Community</h3>
+            <p>
+                Meet players, join factions and become part of
+                the community.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🏆 Competition</h3>
+            <p>
+                Compete with other players and climb the
+                community leaderboard.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="features">
+
+    <div class="title">
+        <h2>Server Features</h2>
+        <p>Designed for an exciting RP experience.</p>
+    </div>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>🚗 Vehicles</h3>
+            <p>
+                Own, customize and drive different vehicles.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>💼 Jobs</h3>
+            <p>
+                Choose different jobs and build your character's career.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>🏢 Factions</h3>
+            <p>
+                Join police, medical, criminal and other factions.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>👑 VIP</h3>
+            <p>
+                Special memberships and rewards for dedicated players.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="rules">
+
+    <div class="title">
+        <h2>Community Rules</h2>
+        <p>Keep the server fun and fair.</p>
+    </div>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>01 — Respect</h3>
+            <p>
+                Respect other players and members of staff.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>02 — No Cheating</h3>
+            <p>
+                Cheats, exploits and unauthorized tools are prohibited.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>03 — Roleplay</h3>
+            <p>
+                Follow the server's roleplay rules and stay in character.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="join">
+
+    <div class="server">
+
+        <div>
+            <h2>Mr_Bash RP Server</h2>
+            <p>
+                <span class="online">● Online</span>
+                &nbsp; play.mrbash-demo.com:7777
+            </p>
+        </div>
+
+        <a href="https://discord.com" class="btn primary">
+            Join Discord
+        </a>
+
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Mr_Bash Demo — Gaming Community
+</footer>
+
+</body>
+</html>
